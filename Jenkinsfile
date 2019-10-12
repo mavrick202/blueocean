@@ -1,19 +1,19 @@
 pipeline {
     agent any 
     stages {
-        stage('Master Branch Build') { 
+        stage('Master Build') { 
             steps {
-               
+               sh 'Echo Building..!!'
             }
         }
-        stage('Master Branch Test') { 
+        stage(' Master Test') { 
             steps {
-                // 
+                sh 'Echo Testing..!!'
             }
         }
-        stage(' Master BranchDeploy') { 
+        stage('Master Deploy') { 
             steps {
-                // 
+                sh 'Echo Deploying..!!'
             }
         }
     }
